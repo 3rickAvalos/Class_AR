@@ -7,20 +7,21 @@
         	<a-assets>
 			<a-asset-item id="Baseball-obj" src="Assets/baseball.obj"></a-asset-item>
 			<a-asset-item id="Baseball-mtl" src="Assets/baseball.mtl"></a-asset-item>
-			
+        	</a-assets>
+       
+		
+        	<a-marker type='pattern' url='Markers/EA_Marker.patt'>
+			<a-entity obj-model="obj: #Baseball-obj; mtl: #Baseball-mtl" scale='10.0 10.0 10.0' position='0 0 0'>
 			<!-----Rotating Animation Code----->
 				<a-animation attributes = "rotation"
 					dur = "3000"
 					to = "0 360 0"
 					repeat = "indefinite"
 					easing = "linear"></a-animation>
-        	</a-assets>
-        
-		<!-------Camera Position---------->
+			</a-entity>
+			<!-------Camera Position---------->
 		<a-camera position = '0 0 3' user = '0'</a-camera>
-		
-        	<a-marker type='pattern' url='Markers/EA_Marker.patt'>
-			<a-entity obj-model="obj: #Baseball-obj; mtl: #Baseball-mtl" scale='10.0 10.0 10.0' position='0 0 0'></a-entity>
+			
         	</a-marker>
 		
 		<a-entity camera></a-entity>
