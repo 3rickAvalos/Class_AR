@@ -8,18 +8,10 @@
 			<a-asset-item id="Baseball-obj" src="Assets/baseball.obj"></a-asset-item>
 			<a-asset-item id="Baseball-mtl" src="Assets/baseball.mtl"></a-asset-item>
         	</a-assets>
-		<a-sky color="lightblue"></a-sky>
-       
 		
         	<a-marker type='pattern' url='Markers/EA_Marker.patt'>
-			<a-entity obj-model="obj: #Baseball-obj; mtl: #Baseball-mtl" scale='10.0 10.0 10.0' position='0 0 0'
-				<a-animation attribute="scale"
-					dur="1000"
-					from="1 1 1"
-					direction='alternate-reverse'
-					easing="ease-in-out-circ"
-					repeat="indefinite"</a-animation>></a-entity>	
-        	</a-marker>
+			<a-entity obj-model="obj: #Baseball-obj; mtl: #Baseball-mtl" scale='10.0 10.0 10.0' position='0 0 0'>
+		</a-marker>
 		
 		<a-entity camera></a-entity>
 	</a-scene>
